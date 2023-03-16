@@ -1,3 +1,4 @@
+% Funktion berechnet die optimale Menge an Auszahlungen, die durch die Pareto-optimalen Sicherheitsstrategien von Spielerin 2 erzeugt werden
 function[img_p2] = poss2(g)
     [m,n] = size(g);
     K = length(g{1,1});
@@ -24,5 +25,5 @@ function[img_p2] = poss2(g)
     rep.l = repl;
     rep.M = eye(m+K);
     S = polyh(rep);
-    [img_p2] = vlpsolve(P,S,'min',C_poss,c_poss);
+    [img_p2] = vlpsolve(P,S,'min',C_poss,c_poss); % img_p2 stellt diese Menge dar
 end
