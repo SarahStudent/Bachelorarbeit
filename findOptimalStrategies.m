@@ -138,7 +138,5 @@ while aa <= 1 % loop über alle möglichen Strategien
     end
     aa = aa+dd;
 end
-plot(img_p2);
-grid on;
 hold off;
 end % function end
