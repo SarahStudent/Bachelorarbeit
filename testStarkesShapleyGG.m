@@ -1,4 +1,4 @@
-% diese Funktion testet anhand der H-Darstellungen der Polyeder V1(p) bzw V2(q) aus der BA, ob die Strategien p und q ein starkes Shapley-Gleichgewicht sind
+% diese Funktion testet anhand der H-Darstellungen der Polyeder V1(p) bzw V2(q) aus der BA, ob die Strategien p und q für das Spiel g ein starkes Shapley-Gleichgewicht sind
 function[ss] = testStarkesShapleyGG(g,B1,b1,B2,b2)
     ss = 0;
     K = length(g{1,1});
