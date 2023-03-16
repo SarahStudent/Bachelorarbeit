@@ -1,3 +1,4 @@
+% Funktion berechnet für ein gegebenes Spiel in Matrixform (g) und eine Strategie (p) die Menge V1(p)
 function [V1] = calculateV1(p,g)  
   K = length(g{1,1});
   [m,n] = size(g);
