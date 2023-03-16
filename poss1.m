@@ -1,3 +1,4 @@
+% Funktion berechnet optimale Menge an Auszahlungen, die durch die pareto-optimalen Sicherheitsstrategien von Spieler 1 erzeugt werden
 function[img_p1] = poss1(g)
     [m,n] = size(g);
     K = length(g{1,1}); % erstellen zulässigen Bereich des MOLP
@@ -22,5 +23,5 @@ function[img_p1] = poss1(g)
     rep.l = repl;
     rep.M = eye(m+K);
     S = polyh(rep);
-    [img_p1] = molpsolve(P,S,'min');
+    [img_p1] = molpsolve(P,S,'min'); % img_p1 stellt die optimale Menge dar
 end
