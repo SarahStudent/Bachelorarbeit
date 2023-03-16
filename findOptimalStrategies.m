@@ -1,3 +1,6 @@
+% die Funktion kann die optimalen Auszahlungsmenge für die pareto-optimalen Sicherheitsstrategien der beiden Spieler:innen,
+% die minimalen und maximalen Strategien für eine gegebene Schrittweite und Toleranzgrenze und die zugehörigen Auszahlungen berechnen und plotten
+% für eine beispielhafte Eingabe siehe test.m
 function findOptimalStrategies(struct)
 g1 = struct.g1;
 g2 = struct.g2;
@@ -32,12 +35,12 @@ if struct.min == 1 || struct.max == 1 % falls optimale Strategien geplottet werd
     axis([0 1 0 1]);
     x = [0; 1; 0];
     y = [0; 0; 1];
-    %title('Optimale Strategien')
-    %text(0.75,0.9,'minimal','Color','red');
-    %text(0.75,0.8,'maximal','Color','blue');
+    title('Optimale Strategien')
+    text(0.75,0.9,'minimal','Color','red');
+    text(0.75,0.8,'maximal','Color','blue');
     patch(x,y,[3/4 4/5 17/20],'FaceAlpha',.3);
-    xlabel('p_1');
-    ylabel('p_2');
+    xlabel('p_1 und/ oder q_1');
+    ylabel('p_2 und/ oder q_2');
 elseif struct.minV == 1 || struct.maxV == 1
     figure(3);
     title('optimale Auszahlungen')
