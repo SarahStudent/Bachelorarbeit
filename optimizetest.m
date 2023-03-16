@@ -1,5 +1,5 @@
-% Funktion testet anhand der übergebenen Parameter der Strategie, ob diese minimal ist
-function [optval,sol_p,sol_d,status] = optimizetest(g,B,b,ecken,epsilon)
+% Funktion testet anhand der übergebenen Parameter (B,b) von der Strategie p, ob diese für das Spiel g minimal ist
+function [optval,sol_p,sol_d,status] = optimizetest(g,B,b,ecken,epsilon) % epsilon ist die Toleranzgrenze
   H = -1* B; % geht aus dem manual für bensolvetools hervor
   h = -1* b;
   r = size(ecken,2);
