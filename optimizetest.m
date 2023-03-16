@@ -1,3 +1,4 @@
+% Funktion testet anhand der übergebenen Parameter der Strategie, ob diese minimal ist
 function [optval,sol_p,sol_d,status] = optimizetest(g,B,b,ecken,epsilon)
   H = -1* B; % geht aus dem manual für bensolvetools hervor
   h = -1* b;
@@ -56,5 +57,5 @@ function [optval,sol_p,sol_d,status] = optimizetest(g,B,b,ecken,epsilon)
   rep.M = eye(m+r);
   S = polyh(rep);
   d = d';
-  [optval,sol_p,sol_d,status] = lpsolve(d,S,'max');
+  [optval,sol_p,sol_d,status] = lpsolve(d,S,'max'); % ist optval=0, ist die Strategie für den Spieler minimal
 end
