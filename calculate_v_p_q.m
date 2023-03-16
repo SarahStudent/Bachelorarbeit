@@ -1,3 +1,4 @@
+% Funktion berechnet v(p,q) aus der BA
 function[v] = calculate_v_p_q(p,q,g)
   v = 0;
   for i = 1:size(p,1)
