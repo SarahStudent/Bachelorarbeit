@@ -1,4 +1,5 @@
 % diese Funktion berechnet anhand der H-Darstellungen der Polyeder V1(p) bzw. V2(q) aus der BA, ob zwei Strategien p und q für das Spiel g ein Shapley-Gleichgewicht bilden
+% die Formel für diese Berechnung stammt aus dem Preprint https://arxiv.org/pdf/1701.08514.pdf Seite 22
 function[s] = testShapleyGG(p,q,g,B1,b1,B2,b2)
   s = 0;
   v = calculate_v_p_q(p,q,g); % Funktion berechnet v(p,q)
