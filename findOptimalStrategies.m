@@ -1,6 +1,7 @@
 % die Funktion kann die optimalen Auszahlungsmenge für die pareto-optimalen Sicherheitsstrategien der beiden Spieler:innen,
 % die minimalen und maximalen Strategien für eine gegebene Schrittweite und Toleranzgrenze und die zugehörigen Auszahlungen berechnen und plotten
 % für eine beispielhafte Eingabe siehe test.m
+% Vorgehen siehe Preprint Kapitel 4 https://arxiv.org/pdf/1701.08514.pdf und Bachelorarbeit Kapitel 4 "Implementierung optimaler Strategien"
 function findOptimalStrategies(struct)
 g1 = struct.g1;
 g2 = struct.g2;
