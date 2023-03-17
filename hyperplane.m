@@ -1,4 +1,5 @@
 % Funktion berechnet die Stützhyperebene einer Ecke e eines Polyeders in H-Darstellung (B,b) mit den gewünschten Eigenschaften aus der BA
+% Berechnung ergibt sich aus dem Preprint https://arxiv.org/pdf/1701.08514.pdf Seite 20-23
 function [c,gamma] = hyperplane(e,B,b,epsilon)
   c = zeros(1,size(B,2));
   gamma = 0;
