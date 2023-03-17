@@ -1,4 +1,6 @@
 % Funktion berechnet für das Spiel g die optimale Menge an Auszahlungen, die durch die pareto-optimalen Sicherheitsstrategien von Spieler 1 erzeugt werden
+% die Berechnung der Menge stammmt aus dem Code zu dem Preprint https://arxiv.org/pdf/1701.08514.pdf, der mir im Rahmen der Bachelorarbeit zur Verfügung gestellt wurde
+% hier liegt eine abgewandelte Version der Implementierung vor, die die bensolve tools verwendet
 function[img_p1] = poss1(g)
     [m,n] = size(g);
     K = length(g{1,1}); % erstellen zulässigen Bereich des MOLP
