@@ -1,4 +1,5 @@
 % Funktion berechnet für ein gegebenes Spiel in Matrixform (g) und eine Strategie (q) die Menge V2(q)
+% die Formel zur Berechnung des Polyeders V2(q) stammt aus dem Preprint https://arxiv.org/pdf/1701.08514.pdf Seite 8
 function [V2] = calculateV2(q,g)
   K = length(g{1,1});
   [m,n] = size(g);
