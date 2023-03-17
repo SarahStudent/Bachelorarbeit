@@ -1,4 +1,6 @@
 % Funktion berechnet für das Spiel g die optimale Menge an Auszahlungen, die durch die pareto-optimalen Sicherheitsstrategien von Spielerin 2 erzeugt werden
+% die Berechnung der Menge stammmt aus dem Code zu dem Preprint https://arxiv.org/pdf/1701.08514.pdf, der mir im Rahmen der Bachelorarbeit zur Verfügung gestellt wurde
+% hier liegt eine abgewandelte Version der Implementierung vor, die die bensolve tools verwendet
 function[img_p2] = poss2(g)
     [m,n] = size(g);
     K = length(g{1,1});
