@@ -1,4 +1,6 @@
 % Funktion testet anhand der übergebenen Parameter (B,b) von der Strategie p, ob diese für das Spiel g minimal ist
+% es wird also getestet ob die Strategie p für den Spieler 1 optimal ist
+% das Vorgehen ergibt sich aus dem Theorem 4.3 in dem Preprint https://arxiv.org/pdf/1701.08514.pdf
 function [optval,sol_p,sol_d,status] = optimizetest(g,B,b,ecken,epsilon) % epsilon ist die Toleranzgrenze
   H = -1* B; % geht aus dem manual für bensolvetools hervor
   h = -1* b;
