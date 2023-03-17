@@ -1,4 +1,5 @@
 % Funktion berechnet für ein gegebenes Spiel in Matrixform (g) und eine Strategie (p) die Menge V1(p)
+% die Formel für den Polyeder V1(p) stammt aus dem Preprint https://arxiv.org/pdf/1701.08514.pdf auf Seite 7
 function [V1] = calculateV1(p,g)  
   K = length(g{1,1});
   [m,n] = size(g);
